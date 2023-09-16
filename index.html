@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="application-name" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="black">
+    <meta http-equiv="refresh" content="#">
+    <meta name="description" content="trying out some cool stuff within java script">
+    <meta name="keyword" content="no description actually">
+    <meta name="author" content="aj codes">
+    <meta name="robot" content="index">
+    <link rel="shortcut-icon" type="png/jpg" href="./icon.png">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <p>Tip Calc</p>
+    </div>
+    <form action="#" method="POST" >
+        <label>
+            <p id="billHeader" style="transition:1s;">Bill Total</p>
+            <span style="padding-left:70px;position:absolute;padding-top:5px">$</span>
+            <input class="inputBoxStyle" id="billFun" style="color:white;" type="number" role="input" alt="input" placeholder="$ 0.00" autocomplete title="Enter bill" maxLength="6" minLength="1">
+        </label>
+        <br><br><br>
+        <label>
+            <p id="tipHeader" style="transition:1s;">Tip</p>
+            <span style="padding-left:70px;position:absolute;padding-top:5px">%</span>
+            <input class="inputBoxStyle" id="TipFun" style="color:white;" type="number" role="input" alt="input" placeholder="Tip Percentage" autocomplete title="Enter Tip Percent" maxlength="3" minLength="0">
+        </label>
+    </form>
+</div>
+
+<div class="secondContainer">
+    <ul>
+        <li>
+            <p style="font-size:20px">People</p>
+            <div class="peopleWrap">
+
+                <div class="but" style="width:30px;height:20px;border-radius:30px;background-color:rgb(248, 51, 51); text-align:center;padding-top:5px;" id="dec">
+                     - 
+                </div>
+                
+                <div id="divisionDisplay" style="width:40px;text-align:center;">
+                    1
+                </div>
+                
+                <div class="but" style="width:30px;height:20px; border-radius:30px;background-color:blue; text-align:center;padding-top:5px;" id="inc">
+                     + 
+                </div>
+            </div>
+        </li>
+        <li style="display:block;margin-left:100px;">
+            <p style="font-size:20px" style="text-align:center;">Total Per Person</p>
+            
+            <div id="molarDisplay" style="text-align:center;" value="$ 0.00">$ 0.00</div>
+        </li>
+    </ul>
+</div>
+
+
+<div id="table_wrap">
+    
+</div>
+
+</body>
+<script src="index.js"></script>
+</html>
